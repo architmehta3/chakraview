@@ -87,9 +87,10 @@
                           <li><a href="elements.html">elements</a></li>
                         </ul>
                       </li> -->
-                                        <li><a href="#team">Team</a></li>
-                                        <li><a href="Venue.html">Venue</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        
+                                        <li><a href="https://maps.app.goo.gl/6WYDjZLXDjAJcv8g7" target="_blank">Venue</a></li>
+                                        <li><a href="#team">Contact Us</a></li>
+                                        <!-- <li><a href="contact.html">Contact</a></li> -->
                                     </ul>
                                 </nav>
                             </div>
@@ -772,6 +773,26 @@
     <script>
         $(document).ready(function () {
             $('a[href="#schedule"]').on('click', function (event) {
+                if (this.hash !== '') {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        },
+                        800, // You can adjust the scrolling speed (in milliseconds)
+                        function () {
+                            window.location.hash = hash;
+                        }
+                    );
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('a[href="#team"]').on('click', function (event) {
                 if (this.hash !== '') {
                     event.preventDefault();
                     var hash = this.hash;
