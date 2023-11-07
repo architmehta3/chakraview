@@ -5,7 +5,6 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>Chakraview - Event Schedule</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="icon" href="img/chakraview-logo-removebg-preview.png" type="image/icon type" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -26,7 +25,40 @@
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/slicknav.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .event-card {
+      border: none;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-card .card-body {
+      text-align: center;
+    }
+
+    .event-card h5 {
+      color: #007bff;
+    }
+
+    .event-card h2 {
+      color: #333;
+    }
+
+    .event-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .event-card strong {
+      color: #333;
+    }
+  </style>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -122,7 +154,8 @@
                             </div>
                         </div> -->
             <div class="col-12">
-              <div class="mobile_menu d-block d-lg-none"></div>
+              <div class="mobile_menu d-block d-lg-none">
+              </div>
             </div>
           </div>
         </div>
@@ -179,62 +212,82 @@
     </div>
   </div>
   <!-- slider_area_end -->
-  <br />
-  <br />
-  <br />
-  <br />
-  <section>
-    <div class="container">
-      <h1 class="mt-5">CODERUN 2023 48 Hours Challenge</h1>
-      <h3>Conquer the code</h3>
 
-      <section class="mt-2">
-        <h2>Code Run is a 48-hour hackathon organized by GDSC Avantika University. Join us for our flagship tech event
-          and submit your hacks to get a chance to nab the exciting prizes that we have lined up for you. The event will
-          start on 23rd September 2022, and you will get 48 hours to submit your solutions. So hurry up and click on the
-          devfolio button to register.</h2>
-        <!-- <p>
-          This is a description of the event. You can provide details about
-          what the event is about, its objectives, and more.
-        </p> -->
-      </section>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Hackathon Schedule</h1>
+    <h5 class="card-title" style="color: #007bff; text-align: center;">28 November 2023, 10-11 am</h5>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card event-card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Hackathon Launch</h2>
+            <p class="card-text">
+              The 48 Hours Challenge CODERUN 2023 | Chakraview will be
+              launched on 28th of November 2023
+            </p>
+            <p class="card-text">
+              <strong>Faculty Coordinator:</strong> [Faculty Coordinator Name]
+            </p>
+            <p class="card-text">
+              <strong>Student Coordinator:</strong> [Student Coordinator Name]
+            </p>
+            <p class="card-text">
+              <strong>Contact:</strong> [Coordinator's Email/Phone Number]
+            </p>
+          </div>
+        </div>
+        <!-- Add more event cards similar to the above structure for other events -->
+      </div>
 
-      <section class="mt-4">
-        <h2>Rules</h2>
-        <ul style="list-style-type: disc;">
-          <li>1.Deadline to Register: 20th NOV 2023, 23:59 IST</li>
-          <li>2.Teams must be comprised of 1-3 people.</li>
-          <li>3.Please treat our sponsors and organizers with the utmost respect.</li>
-          <li>4.Please treat all other hackers with the utmost respect. We ask that you act kindly, behave professionally, and do not insult or put down other attendees.</li>
-        </ul>
-      </section>
+      <div class="col-md-6">
+        <div class="card event-card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Hackathon Description</h2>
+            <p class="card-text">
+              The 48 Hours Challenge CODERUN 2023 | Chakraview will be
+              launched on 28th of November 2023
+            </p>
+            <p class="card-text">
+              <strong>Faculty Coordinator:</strong> [Faculty Coordinator Name]
+            </p>
+            <p class="card-text">
+              <strong>Student Coordinator:</strong> [Student Coordinator Name]
+            </p>
+            <p class="card-text">
+              <strong>Contact:</strong> [Coordinator's Email/Phone Number]
+            </p>
+          </div>
+        </div>
+        <!-- Add more event cards similar to the above structure for other events -->
+      </div>
 
-      <section class="mt-4">
-        <h2>Faculty Coordinator</h2>
-        <p>Name: Dr </p>
-        <p>Email: john@example.com</p>
-        <p>Phone: +1234567890</p>
-      </section>
-
-      <section class="mt-4">
-        <h2>Student Coordinator</h2>
-        <p>Name: Jane Smith</p>
-        <p>Email: jane@example.com</p>
-        <p>Phone: +9876543210</p>
-      </section>
+      <div class="col-md-6">
+        <div class="card event-card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Hackathon Rules</h2>
+            <p class="card-text">
+              The 48 Hours Challenge CODERUN 2023 | Chakraview will be
+              launched on 28th of November 2023
+            </p>
+            <li>1. Deadline to Register: 20th NOV 2023, 23:59 IST</li>
+            <li>2. Teams must be comprised of 1-3 people.</li>
+            <li>3. Please treat our sponsors and organizers with the utmost respect.</li>
+            <li>4. Please treat all other hackers with the utmost respect. We ask that you act kindly, behave professionally, and do not insult or put down other attendees.</li>
+            <p class="card-text">
+              <strong>Faculty Coordinator:</strong> [Faculty Coordinator Name]
+            </p>
+            <p class="card-text">
+              <strong>Student Coordinator:</strong> [Student Coordinator Name]
+            </p>
+            <p class="card-text">
+              <strong>Contact:</strong> [Coordinator's Email/Phone Number]
+            </p>
+          </div>
+        </div>
+        <!-- Add more event cards similar to the above structure for other events -->
+      </div>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </section>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+  </div>
 
   <!-- footer_start -->
   <footer class="footer footer_bg_1">
