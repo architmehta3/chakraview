@@ -373,7 +373,7 @@ h3 {
 
 /* line 262, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
 .mb-95 {
-  margin-bottom: 95px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 767px) {
@@ -639,6 +639,7 @@ h3 {
   color: #1F1F1F;
   display: inline-block;
   position: relative;
+  margin-left: -150px;
 }
 
 @media (max-width: 767px) {
@@ -1679,7 +1680,7 @@ h3 {
 .speakers_area {
   padding-top: 100px;
   position: relative;
-  padding-bottom: 105px;
+  padding-bottom: 0px;
 }
 
 /* line 5, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
@@ -1713,7 +1714,7 @@ h3 {
 
 /* line 20, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
 .speakers_area .horizontal_text {
-  font-size: 120px;
+  font-size: 80px;
   font-weight: 700;
   position: absolute;
   right: 0;
@@ -1833,6 +1834,204 @@ h3 {
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+/* Faculty Heads Start */
+
+.cardf-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width as needed */
+  column-gap: 80px;
+  justify-content: center; /* Center align the grid */
+  margin: 0 auto; /* Adjust margins for horizontal centering */
+  max-width: 1000px; /* Set a maximum width for the grid */
+  text-align: center;
+}
+
+/* Styles for smaller screens (such as mobile) */
+@media (max-width: 600px) {
+  .cardf-grid-1 {
+    grid-template-columns: 1fr; /* Display cards in a single column */
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.cardf-1 {
+  border: 1px solid #ccc;
+  padding: 5%;
+  margin-top: 20%;
+  text-align: center;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.3); /* Adding box shadow */
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  max-width: 700px; /* Adjust the width */
+  max-height: 750px; /* Adjust the height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.cardf-grid-1 .cardf-1 img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cardf-grid-1 .card-1 h3 {
+  margin: 5% 0;
+  font-size: 18px;
+}
+
+.cardf-1:hover {
+  box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+#load-more-btnf {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.3); /* Adding box shadow */
+  transition: background-color 0.6s ease, color 0.6s ease, transform 0.6s ease;
+  transform: translateY(5px); /* Add a slight horizontal shift */
+
+}
+
+#load-more-btnf:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.7); /* Adding box shadow */
+  transition: box-shadow 0.6s ease, transform 0.6s ease;
+  transform: translateY(-5px); /* Add a slight horizontal shift */
+  
+}
+
+/* Student Team Start */
+
+.card-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width as needed */
+  column-gap: 80px;
+  justify-content: center; /* Center align the grid */
+  margin: 0 auto; /* Adjust margins for horizontal centering */
+  max-width: 1000px; /* Set a maximum width for the grid */
+  text-align: center;
+}
+
+/* Styles for smaller screens (such as mobile) */
+@media (max-width: 600px) {
+  .card-grid-1 {
+    grid-template-columns: 1fr; /* Display cards in a single column */
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.card-1 {
+  border: 1px solid #ccc;
+  padding: 5%;
+  margin-top: 20%;
+  text-align: center;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.3); /* Adding box shadow */
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  max-width: 700px; /* Adjust the width */
+  max-height: 750px; /* Adjust the height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.card-grid-1 .card-1 img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-grid-1 .card-1:hover img {
+  transform: scale(1.1);
+}
+
+.card-grid-1 .card-1 h3 {
+  margin: 5% 0;
+  font-size: 18px;
+}
+
+.card-1::after {
+  content: attr(data-description);
+  position: absolute;
+  bottom: 34%;
+  left: 50%;
+  transform: translate(-50%, 50%); /* Center the description */
+  width: 100%;
+  height: 33%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding-top: 22px;
+  padding: 20px;
+  border-radius: 0 0px 20px 20px;
+  font-size: 19px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+  text-align: center;
+}
+
+
+.card-1:hover::after {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+.card-1:hover {
+  box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+#load-more-btn {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.3); /* Adding box shadow */
+  transition: background-color 0.6s ease, color 0.6s ease, transform 0.6s ease;
+  transform: translateY(5px); /* Add a slight horizontal shift */
+
+}
+
+#load-more-btn:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.7); /* Adding box shadow */
+  transition: box-shadow 0.6s ease, transform 0.6s ease;
+  transform: translateY(-5px); /* Add a slight horizontal shift */
+  
+}
+/* Student Team End */
+
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_resister.scss */
 .resister_bg_1 {
