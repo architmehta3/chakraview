@@ -2010,7 +2010,7 @@ h3 {
   .card-1::after {
     content: attr(data-description);
     position: absolute;
-    bottom: 34%;
+    bottom: 35%;
     left: 50%;
     width: 100%;
     height: 50%;
