@@ -2616,6 +2616,8 @@ h1 {
   font-size: 16px;
   color: #fff;
   line-height: 42px;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 /* line 91, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
