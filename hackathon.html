@@ -167,40 +167,48 @@
       }
     
       .slider_bg_hack {
-          background-image: url(/img/hack.jpg);
+          background-image: url(img/hack.jpg);
           background-size:cover;
       }
 
       .container-lch {
-            background-image: url(img/hacks.jpg);
-            background-size: cover;
-            background-position: center;
-            padding: 20px;
-            height: 500px; /* Adjust the height as needed */
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+        background-image: url(img/hacks.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        height: 500px; /* Adjust the height as needed */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        /* Style for the cards */
-        .card-lch {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            width: 20vw; /* Adjust the width as needed */
-            height: 30vh;
-            text-align: center;
-        }
+      /* Style for the cards */
+      .card-lch {
+        background-color: #1f1f1f;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 20vw; /* Adjust the width as needed */
+        height: 30vh;
+        text-align: center;
+        box-shadow: 0px 12px 16px 0px rgba(170, 170, 170, 0.6);
+        transition: 1s ease;
+      }
 
-        .card-lch h3 {
-          font-size: 40px;
-          color: white;
-        }
+      .card-lch:hover {
+        box-shadow: 0px 24px 30px 0px rgba(170, 170, 170, 1);
+        transition: 1s ease;
+        transform: translateY(-10px);
+      }
 
-        .card-lch p {
-          font-size: 24px;
-        }
+      .card-lch h3 {
+        font-size: 40px;
+        color: white;
+      }
+
+      .card-lch p {
+        font-size: 24px;
+      }
 
     </style>
   </head>
@@ -344,7 +352,6 @@
     <!-- <div style="background-image: url(img/game.jpg); background-size:cover; background-position: center; background-attachment:fixed;"></div> -->
 
     <div class="container-lch">
-
       <!-- Three Horizontally Aligned Cards -->
       <div class="card-lch">
         <br>
@@ -355,13 +362,16 @@
 
       <div class="card-lch">
         <br>
-        <img width="100vw" src="img/rocket.png" alt=""><br><br>
-        <h3></h3>
-        <p>28th November 2023</p>
+        <img width="100vw" src="img/typing.png" alt=""><br><br>
+        <h3>Tasking</h3>
+        <p>29th November 2023</p>
       </div>
 
       <div class="card-lch">
-          <p>Card 3</p>
+        <br>
+        <img width="100vw" src="img/trophy1.png" alt=""><br><br>
+        <h3>Final</h3>
+        <p>30th November 2023</p>
       </div>
 
     </div>
