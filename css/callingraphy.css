@@ -1,0 +1,272 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and set the font for the whole page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Style the header section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+  }
+ 
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Style the hamburger icon */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+  
+  @media (max-width: 933px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .hamburger span {
+    background-color: #fff;
+    width: 2rem;
+    height: 0.2rem;
+    border-radius: 2px;
+    transition: all 0.3s linear;
+    transform-origin: left center;
+    position: relative;
+  }
+  
+  .hamburger span::before,
+  .hamburger span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s linear;
+  }
+  
+  .hamburger span::before {
+    top: -0.5rem;
+  }
+  
+  .hamburger span::after {
+    bottom: -0.5rem;
+  }
+  
+  .hamburger.active span {
+    background-color: #000;
+  }
+  
+  .hamburger.active span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .hamburger.active span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+  @media (min-width: 933px) {
+    .hamburger {
+      display: none;
+    }
+  } 
+
+/* Style the hero section */
+#hero {
+    text-align: center;
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+    #hero img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+#hero h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Style the about section */
+#about {
+    background-color: #fff;
+    padding: 50px;
+}
+
+#about h2 {
+    color: #333;
+}
+
+/* Style the activities section */
+#activities {
+    background-color: #f8f8f8;
+    padding: 50px;
+}
+
+#activities h2 {
+    color: #333;
+}
+
+#activities ul {
+    list-style-type: none;
+}
+
+#activities li {
+    margin-bottom: 10px;
+}
+
+/* Style the schedule section */
+#schedule {
+    background-color: #fff;
+    padding: 50px;
+}
+
+#schedule h2 {
+    color: #333;
+}
+
+/* Style the registration section */
+#registration {
+    background-color: #f8f8f8;
+    padding: 50px;
+}
+
+#registration h2 {
+    color: #333;
+}
+
+/* Style the sponsors section */
+#sponsors {
+    background-color: #fff;
+    padding: 50px;
+}
+
+#sponsors h2 {
+    color: #333;
+}
+
+/* Style the footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    #hero {
+        padding: 30px;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #about,
+    #activities,
+    #schedule,
+    #registration,
+    #sponsors {
+        padding: 30px;
+    }
+}
+.sponsors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .sponsor {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .sponsor img {
+    max-width: 100%;
+    height: auto;
+  }
+  
