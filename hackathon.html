@@ -178,21 +178,36 @@
         padding: 20px;
         height: 500px; /* Adjust the height as needed */
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+      }
+
+      .card-container {
+        perspective: 1000px;
+        width: 150px; /* Adjust the width as needed */
+        margin-bottom: 20px; /* Adjust the margin as needed */
+        margin-right: 10%;
+        transition: 1s ease;
       }
 
       /* Style for the cards */
       .card-lch {
         background-color: #1f1f1f;
         color: #fff;
-        padding: 20px;
+        padding: 16px;
         border-radius: 10px;
         width: 20vw; /* Adjust the width as needed */
         height: 30vh;
         text-align: center;
         box-shadow: 0px 12px 16px 0px rgba(170, 170, 170, 0.6);
+        transform-style: preserve-3d;
+        transition: transform 0.6s, 1s ease;
+      }
+
+      .card-container:hover {
         transition: 1s ease;
+        transform: translateX(20px);
       }
 
       .card-lch:hover {
@@ -201,13 +216,90 @@
         transform: translateY(-10px);
       }
 
+      .card-lch .card-face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      .card-lch .front {
+        background-color: #000;
+        color: #fff;
+      }
+
+      .card-lch .back {
+        background-color: #333;
+        color: #fff;
+        transform: rotateY(180deg);
+      }
+
+      .card-lch .back p {
+        padding: 20px;
+        font-size: 15px;
+        text-align: justify;
+      }
+
+      /* Hover effect */
+      .card-container:hover .card-lch {
+        transform: rotateY(180deg);
+      }
+
       .card-lch h3 {
-        font-size: 40px;
+        font-size: 32px;
         color: white;
       }
 
       .card-lch p {
-        font-size: 24px;
+        font-size: 22px;
+      }
+
+      /* Responsive adjustments for smaller screens */
+      @media (max-width: 768px) {
+
+        .container-lch {
+          background-size: cover;
+          background-position: center;
+          height: fit-content;
+        }
+
+        .card-container {
+          width: 45%; /* Adjust the width for smaller screens */
+        }
+
+        .card-lch {
+          width: calc(50% - 20px); /* Adjust the width for smaller screens */
+          margin-bottom: 20px;
+        }
+
+        .card-lch h3 {
+          font-size: 28px;
+        }
+        .card-lch p {
+          font-size: 18px;
+        }
+
+        .card-lch img {
+          width: 70px;
+        }
+
+        .card-lch .back p {
+          font-size: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .card-lch {
+          width: 100%; /* Full width for screens smaller than 480px */
+        }
+        .card-container {
+          width: 90%; /* Full width for screens smaller than 480px */
+        }
       }
 
     </style>
@@ -353,27 +445,47 @@
 
     <div class="container-lch">
       <!-- Three Horizontally Aligned Cards -->
-      <div class="card-lch">
-        <br>
-        <img width="100vw" src="img/rocket.png" alt=""><br><br>
-        <h3>Launch</h3>
-        <p>28th November 2023</p>
+      <div class="card-container">
+        <div class="card-lch">
+          <div class="card-face front">
+            <br>
+            <img width="100vw" src="img/rocket.png" alt=""><br>
+            <h3>Hachathon Kickoff</h3>
+            <p>28th November 2023</p>
+          </div>
+          <div class="card-face back">
+            <p>Gear up for an adrenaline-fueled start to Chakraview Tech Event! On November 28th, our eagerly awaited Hackathon takes center stage. Students, brace yourselves for a coding marathon where innovation meets intensity. As the clock starts ticking, participants will be assigned exciting themes to shape their development journey. Get ready to unleash your creativity and redefine tech boundaries at the Hackathon Kickoff! ⏱️💻🚀</p>
+          </div>
+        </div>
       </div>
 
-      <div class="card-lch">
-        <br>
-        <img width="100vw" src="img/typing.png" alt=""><br><br>
-        <h3>Tasking</h3>
-        <p>29th November 2023</p>
+      <div class="card-container">
+        <div class="card-lch">
+          <div class="card-face front">
+            <br>
+            <img width="100vw" src="img/typing.png" alt=""><br>
+            <h3>Lab Day</h3>
+            <p>29th November 2023</p>
+          </div>
+          <div class="card-face back">
+            <p>The buzz of innovation continues as our talented participants dive deep into their assigned tasks at the Hackathon Lab. Fueled by passion and armed with cutting-edge technology, students transform ideas into reality. The lab becomes a hive of creativity, collaboration, and coding prowess as they bring their projects to life. Get ready for a day of intense focus and groundbreaking developments at the Hackathon Lab! 💡💻🛠️</p>
+          </div>
+        </div>
       </div>
 
-      <div class="card-lch">
-        <br>
-        <img width="100vw" src="img/trophy1.png" alt=""><br><br>
-        <h3>Final</h3>
-        <p>30th November 2023</p>
+      <div class="card-container">
+        <div class="card-lch">
+          <div class="card-face front">
+            <br>
+            <img width="100vw" src="img/trophy1.png" alt=""><br>
+            <h3>Final & Result</h3>
+            <p>30th November 2023</p>
+          </div>
+          <div class="card-face back">
+            <p>After a day of relentless coding and innovation, participants will wrap up their projects. The air is charged with excitement as results are finalized, and the stage is set to unveil the exceptional creations. Join us for the Hackathon Finale, where outstanding efforts will be recognized, and deserving winners will claim their well-earned prizes. It's a celebration of ingenuity and perseverance! 🎉💻🏆</p>
+          </div>
+        </div>
       </div>
-
     </div>
 
     <!-- brand_area_start -->
