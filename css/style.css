@@ -2028,7 +2028,7 @@ h1 {
   .card-1::after {
     content: attr(data-description);
     position: absolute;
-    bottom: 35%;
+    bottom: 34%;
     left: 50%;
     width: 100%;
     height: 50%;
